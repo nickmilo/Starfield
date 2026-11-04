@@ -10,7 +10,7 @@ Starfield is a night sky, so it stays dark in both of Obsidian's modes.
 
 ## Made with Maps of the Ideaverse
 
-Starfield grew out of [Maps of the Ideaverse](https://github.com/nickmilo/ideaverse-maps), whose Starfield and Starship maps fly you through your notes. With that plugin installed, links can also be colored by how their notes relate (by Idea Emergence): up gold, related violet, above blue, below green, other properties slate.
+Starfield grew out of [Maps of the Ideaverse](https://github.com/nickmilo/ideaverse-maps), whose Starfield and Starship maps fly you through your notes. With that plugin installed, links can also be colored by how their notes relate (by Idea Emergence): up gold, related purple, above blue, below green, other properties slate.
 
 ## Install
 

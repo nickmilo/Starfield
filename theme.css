@@ -38,7 +38,7 @@
 
   /* how notes relate (also the link colors Maps of the Ideaverse can apply) */
   --sf-gold: #ffcf5a;    /* up */
-  --sf-violet: #c9a2ff;  /* related */
+  --sf-purple: #c9a2ff;  /* related */
   --sf-blue: #6fd3ff;    /* above */
   --sf-green: #5fe0a8;   /* below */
   --sf-slate: #a9b4c8;   /* other properties */
@@ -180,7 +180,7 @@
 .markdown-rendered h1,
 .cm-header-1 { --sf-hg: var(--sf-gold); --sf-hb: #fbf6ee; }
 .markdown-rendered h2,
-.cm-header-2 { --sf-hg: var(--sf-violet); --sf-hb: #f6f3fd; }
+.cm-header-2 { --sf-hg: var(--sf-purple); --sf-hb: #f6f3fd; }
 .markdown-rendered h3,
 .cm-header-3 { --sf-hg: var(--sf-blue); --sf-hb: #f3f8fd; }
 .markdown-rendered h4,
@@ -269,12 +269,12 @@
 /*===============================================================
  * LINKS BY HOW NOTES RELATE
  * Maps of the Ideaverse marks each link with data-ivk; the theme colors it:
- * up gold, related violet, above blue, below green, other properties slate.
+ * up gold, related purple, above blue, below green, other properties slate.
  *===============================================================*/
 
 [data-ivk] { text-decoration-color: currentColor; }
 [data-ivk="upp"], [data-ivk="upp"] * { color: var(--sf-gold); }
-[data-ivk="rel"], [data-ivk="rel"] * { color: var(--sf-violet); }
+[data-ivk="rel"], [data-ivk="rel"] * { color: var(--sf-purple); }
 [data-ivk="up"], [data-ivk="up"] * { color: var(--sf-blue); }
 [data-ivk="down"], [data-ivk="down"] * { color: var(--sf-green); }
 [data-ivk="prop"], [data-ivk="prop"] * { color: var(--sf-slate); }
