@@ -1,0 +1,24 @@
+name: Release Obsidian theme
+
+# Push to main with a new "version" in manifest.json: if there's no release for that version yet,
+# this publishes one (tag = the version, no "v") with theme.css and manifest.json attached.
+on:
+  push:
+    branches: [main]
+    paths: [manifest.json, .github/workflows/release.yml]
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          v=$(node -p "require('./manifest.json').version")
+          if gh release view "$v" >/dev/null 2>&1; then echo "release $v exists"; exit 0; fi
+          gh release create "$v" --target "$GITHUB_SHA" --title "$v" --notes "Starfield $v" theme.css manifest.json
