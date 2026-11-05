@@ -1,7 +1,7 @@
 /*
  * Starfield — An Obsidian Theme
  * by Nick Milo
- * Version 1.0.2
+ * Version 1.0.3
  *
  * Deep space, a nebula glow in the corners, pink for the chrome,
  * and headings that catch a little starlight at their edges.
@@ -39,8 +39,8 @@
   /* how notes relate (also the link colors Maps of the Ideaverse can apply) */
   --sf-gold: #ffcf5a;    /* up */
   --sf-purple: #c9a2ff;  /* related */
-  --sf-blue: #6fd3ff;    /* above */
-  --sf-green: #5fe0a8;   /* below */
+  --sf-blue: #6fbcff;    /* above */
+  --sf-green: #6fe08f;   /* below */
   --sf-coral: #ff9e7d;   /* other properties and collections */
   --sf-ghost: #eceef5;   /* placeholder links */
 
