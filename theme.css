@@ -1,7 +1,7 @@
 /*
  * Starfield — An Obsidian Theme
  * by Nick Milo
- * Version 1.0.1
+ * Version 1.0.2
  *
  * Deep space, a nebula glow in the corners, pink for the chrome,
  * and headings that catch a little starlight at their edges.
@@ -122,6 +122,7 @@
   --pill-color: var(--sf-muted);
   --pill-border-color: var(--sf-line);
   --metadata-label-text-color: var(--sf-muted);
+  --metadata-label-font-size: 10px;   /* the small-caps names stay small at any text size */
   --metadata-input-text-color: var(--sf-ink);
 
   /* the graph view as a star field */
@@ -235,9 +236,10 @@
 }
 
 .metadata-property-key,
-.metadata-property-key-input {
+.metadata-property-key-input,
+input.metadata-property-key-input {
   font-family: var(--font-monospace);
-  font-size: 10.5px;
+  font-size: 10px;
   letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--sf-muted);
