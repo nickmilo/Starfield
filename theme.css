@@ -1,7 +1,7 @@
 /*
  * Starfield — An Obsidian Theme
  * by Nick Milo
- * Version 1.0.0
+ * Version 1.0.1
  *
  * Deep space, a nebula glow in the corners, pink for the chrome,
  * and headings that catch a little starlight at their edges.
@@ -41,7 +41,8 @@
   --sf-purple: #c9a2ff;  /* related */
   --sf-blue: #6fd3ff;    /* above */
   --sf-green: #5fe0a8;   /* below */
-  --sf-slate: #a9b4c8;   /* other properties */
+  --sf-coral: #ff9e7d;   /* other properties and collections */
+  --sf-ghost: #eceef5;   /* placeholder links */
 
   /* Obsidian's variables */
   --background-primary: var(--sf-void);
@@ -269,7 +270,8 @@
 /*===============================================================
  * LINKS BY HOW NOTES RELATE
  * Maps of the Ideaverse marks each link with data-ivk; the theme colors it:
- * up gold, related purple, above blue, below green, other properties slate.
+ * up gold, related purple, above blue, below green, other properties coral.
+ * A placeholder (no note yet, or the note itself) is a dashed outline, no fill.
  *===============================================================*/
 
 [data-ivk] { text-decoration-color: currentColor; }
@@ -277,4 +279,14 @@
 [data-ivk="rel"], [data-ivk="rel"] * { color: var(--sf-purple); }
 [data-ivk="up"], [data-ivk="up"] * { color: var(--sf-blue); }
 [data-ivk="down"], [data-ivk="down"] * { color: var(--sf-green); }
-[data-ivk="prop"], [data-ivk="prop"] * { color: var(--sf-slate); }
+[data-ivk="prop"], [data-ivk="prop"] * { color: var(--sf-coral); }
+[data-ivk="none"] {
+  --link-unresolved-opacity: 1;
+  color: var(--sf-ghost);
+  opacity: 1;
+  text-decoration: none;
+  border: 1px dashed rgba(236, 238, 245, .45);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+[data-ivk="none"] * { color: var(--sf-ghost); text-decoration: none; }
